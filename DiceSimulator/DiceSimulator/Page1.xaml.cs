@@ -13,17 +13,11 @@ using Microsoft.Phone.Controls;
 
 namespace DiceSimulator
 {
-    public partial class MainPage : PhoneApplicationPage
+    public partial class Page1 : PhoneApplicationPage
     {
-        // Constructor
-        public MainPage()
+        public Page1()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
