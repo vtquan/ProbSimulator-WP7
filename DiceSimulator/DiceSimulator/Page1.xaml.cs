@@ -65,6 +65,6 @@ namespace DiceSimulator
 		    
             textBox2.Text = numHead.ToString();
             textBox3.Text = numTail.ToString();
-	}
+	    }
     }
 }
