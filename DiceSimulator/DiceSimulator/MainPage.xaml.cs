@@ -23,7 +23,7 @@ namespace DiceSimulator
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/Page1.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }
