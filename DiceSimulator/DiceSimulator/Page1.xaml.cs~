@@ -32,7 +32,7 @@ namespace DiceSimulator
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            int numRoll = Int32.Parse(textBox1.Text);
+            int numRoll = Int32.Parse(textBox4.Text);
             int numHead = Int32.Parse(textBox2.Text);
             int numTail = Int32.Parse(textBox3.Text);
             sixDiceRoll(numHead, numTail, numRoll);
@@ -43,28 +43,17 @@ namespace DiceSimulator
             int head;
             int tail;
             Random random = new Random();
-            int result = 0;
-	    for(int i = 0; i < numRoll; i++)
-	    {
-		    result = random.Next(0, 2);
-		    if(result == 1)
-		    {
-			    numTail++;
-		    }
-		    else
-		    {
-			    numHead++;
-		    }
-	    }
-	    if(result == 1)	//set last roll
-	    {
-		    textBox4.Text = "Tail";
-	    }
-	    else
-		    textBox4.Text = "Head";
-		    
+            random = random.Next(0, 1);
+            if(random == 1)
+            {
+                numTail++;
+
+            }
+            else
+            {
+                numHead++;
+            }
             textBox2.Text = numHead.ToString();
             textBox3.Text = numTail.ToString();
-	}
     }
 }

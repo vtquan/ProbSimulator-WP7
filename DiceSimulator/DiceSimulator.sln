@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceSimulator", "DiceSimulator\DiceSimulator.csproj", "{537EC1B7-D155-4797-A898-D11C91B74D5D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProbSimulator", "DiceSimulator\ProbSimulator.csproj", "{537EC1B7-D155-4797-A898-D11C91B74D5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
