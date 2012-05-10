@@ -21,9 +21,14 @@ namespace DiceSimulator
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void coinB_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Page1.xaml", UriKind.RelativeOrAbsolute));
+            NavigationService.Navigate(new Uri("/coinPage.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void diceB_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/dicePage.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }

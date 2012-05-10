@@ -13,9 +13,9 @@ using Microsoft.Phone.Controls;
 
 namespace DiceSimulator
 {
-    public partial class Page2 : PhoneApplicationPage
+    public partial class dicePage : PhoneApplicationPage
     {
-        public Page2()
+        public dicePage()
         {
             InitializeComponent();
         }

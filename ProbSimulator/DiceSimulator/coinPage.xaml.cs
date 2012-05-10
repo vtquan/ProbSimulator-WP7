@@ -40,8 +40,7 @@ namespace DiceSimulator
 
         public void sixDiceRoll(int numHead, int numTail, int numRoll)
         {
-            int head;
-            int tail;
+
             Random random = new Random();
             int result = 0;
 	    for(int i = 0; i < numRoll; i++)
