@@ -11,7 +11,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 
-namespace DiceSimulator
+namespace ProbSimulator
 {
     public partial class MainPage : PhoneApplicationPage
     {
@@ -28,7 +28,17 @@ namespace DiceSimulator
 
         private void diceB_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/dicePage.xaml", UriKind.RelativeOrAbsolute));
+
+        }
+
+        private void cardB_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void spinnerB_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

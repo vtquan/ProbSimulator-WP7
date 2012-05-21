@@ -6,11 +6,11 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DiceSimulator")]
+[assembly: AssemblyTitle("ProbSimulator")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DiceSimulator")]
+[assembly: AssemblyProduct("ProbSimulator")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -21,7 +21,7 @@ using System.Resources;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("42488d15-293d-4a09-8e07-bf4c3d420cf3")]
+[assembly: Guid("acf6d47d-ece7-42c3-bb99-d9dad11cdd8f")]
 
 // Version information for an assembly consists of the following four values:
 //

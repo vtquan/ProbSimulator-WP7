@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage 
-    x:Class="DiceSimulator.MainPage"
+    x:Class="ProbSimulator.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -30,9 +30,9 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <Button Content="Coin Flip" Height="104" HorizontalAlignment="Left" Margin="12,5,0,0" Name="coinB" VerticalAlignment="Top" Width="444" Click="coinB_Click" />
-            <Button Content="Dice Roll" Height="104" HorizontalAlignment="Left" Margin="12,115,0,0" Name="diceB" VerticalAlignment="Top" Width="444" />
-            <Button Content="Card Draw" Height="104" HorizontalAlignment="Left" Margin="12,225,0,0" Name="cardB" VerticalAlignment="Top" Width="444" />
-            <Button Content="Spinner" Height="104" HorizontalAlignment="Left" Margin="12,335,0,0" Name="spinnerB" VerticalAlignment="Top" Width="444" />
+            <Button Content="Dice Roll" Height="104" HorizontalAlignment="Left" Margin="12,115,0,0" Name="diceB" VerticalAlignment="Top" Width="444" Click="diceB_Click" />
+            <Button Content="Card Draw" Height="104" HorizontalAlignment="Left" Margin="12,225,0,0" Name="cardB" VerticalAlignment="Top" Width="444" Click="cardB_Click"/>
+            <Button Content="Spinner" Height="104" HorizontalAlignment="Left" Margin="12,335,0,0" Name="spinnerB" VerticalAlignment="Top" Width="444" Click="spinnerB_Click"/>
         </Grid>
     </Grid>
  
