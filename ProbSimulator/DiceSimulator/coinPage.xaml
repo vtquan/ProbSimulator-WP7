@@ -30,11 +30,11 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <TextBox Height="77" HorizontalAlignment="Left" Margin="42,460,0,0" Name="textBox1" Text="1" VerticalAlignment="Top" Width="99" TextChanged="textBox1_TextChanged" TextAlignment="Center" DataContext="{Binding}" InputScope="Number"/>
             <Button Content="Flip" Height="77" HorizontalAlignment="Right" Margin="0,460,42,0" Name="button1" VerticalAlignment="Top" Width="271" Click="button1_Click" />
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="6,13,0,0" Name="textBlock1" Text="Head" VerticalAlignment="Top" Width="180" TextAlignment="Center" />
-            <TextBlock Height="30" HorizontalAlignment="Right" Margin="0,13,6,0" Name="textBlock2" Text="Tail" VerticalAlignment="Top" Width="180" TextAlignment="Center" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="6,13,0,0" Name="headLabel" Text="Head" VerticalAlignment="Top" Width="180" TextAlignment="Center" />
+            <TextBlock Height="30" HorizontalAlignment="Right" Margin="0,13,6,0" Name="tailLabel" Text="Tail" VerticalAlignment="Top" Width="180" TextAlignment="Center" />
             <TextBox Height="72" HorizontalAlignment="Left" Margin="12,49,0,0" Name="textBox2" Text="0" VerticalAlignment="Top" Width="174" TextAlignment="Center" />
             <TextBox Height="72" HorizontalAlignment="Left" Margin="270,49,0,0" Name="textBox3" Text="0" VerticalAlignment="Top" Width="180" TextAlignment="Center" />
-            <TextBlock Height="41" HorizontalAlignment="Left" Margin="0,141,0,0" Name="textBlock3" Text="Last Roll" VerticalAlignment="Top" Width="456" TextAlignment="Center" />
+            <TextBlock Height="41" HorizontalAlignment="Left" Margin="0,141,0,0" Name="lastRollLabel" Text="Last Roll" VerticalAlignment="Top" Width="456" TextAlignment="Center" />
             <TextBox Height="72" HorizontalAlignment="Left" Margin="143,163,0,0" Name="textBox4" Text="None" TextAlignment="Center" VerticalAlignment="Top" Width="180" />
         </Grid>
     </Grid>

@@ -27,7 +27,12 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"></Grid>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBox Height="77" HorizontalAlignment="Left" Margin="42,460,0,0" Name="numDiceBox" Text="1" VerticalAlignment="Top" Width="99" TextChanged="textBox1_TextChanged" TextAlignment="Center" DataContext="{Binding}" InputScope="Number"/>
+            <Button Content="Flip" Height="77" HorizontalAlignment="Right" Margin="0,460,42,0" Name="diceRollB" VerticalAlignment="Top" Width="271" Click="button1_Click" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="183,24,0,0" Name="textBlock1" Text="Result" VerticalAlignment="Top" />
+            <TextBox Height="72" HorizontalAlignment="Center" Margin="0,46,0,0" Name="textBox1" Text="TextBox" VerticalAlignment="Top" Width="450" TextAlignment="Center" />
+        </Grid>
     </Grid>
  
     <!--Sample code showing usage of ApplicationBar-->
