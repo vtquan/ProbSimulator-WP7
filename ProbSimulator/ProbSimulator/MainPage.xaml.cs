@@ -28,7 +28,7 @@ namespace ProbSimulator
 
         private void diceB_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/dicePage.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void cardB_Click(object sender, RoutedEventArgs e)

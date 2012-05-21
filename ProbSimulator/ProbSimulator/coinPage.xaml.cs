@@ -20,7 +20,7 @@ namespace ProbSimulator
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void coinFlipB_Click(object sender, RoutedEventArgs e)
         {            
             int numHead = Int32.Parse(numHeadBox.Text);
             int numTail = Int32.Parse(numTailBox.Text);
@@ -57,6 +57,11 @@ namespace ProbSimulator
         }
 
         private void lastFlipBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void numFlipBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
