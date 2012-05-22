@@ -24,8 +24,16 @@ namespace ProbSimulator
         {            
             int numHead = Int32.Parse(numHeadBox.Text);
             int numTail = Int32.Parse(numTailBox.Text);
-            int numFlip = Int32.Parse(numFlipBox.Text);
-            coinFlip(numHead, numTail, numFlip);
+            int numFlip = 0;
+            if (Int32.TryParse(numFlipBox.Text, out numFlip))
+            {
+                
+                coinFlip(numHead, numTail, numFlip);
+            }
+            else
+            {
+                MessageBox.Show("Please enter only integer (no decimal)");
+            }
         }
 
         public void coinFlip(int numHead, int numTail, int numFlip)

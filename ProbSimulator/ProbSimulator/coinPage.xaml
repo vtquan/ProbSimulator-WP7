@@ -31,9 +31,9 @@
             <TextBlock Height="30" HorizontalAlignment="Left" Margin="6,27,0,0" Name="headLabel" Text="Head" VerticalAlignment="Top" Width="180" TextAlignment="Center" />
             <TextBlock Height="30" HorizontalAlignment="Right" Margin="0,27,0,0" Name="tailLabel" Text="Tail" VerticalAlignment="Top" Width="180" TextAlignment="Center" />
             <TextBlock Height="41" HorizontalAlignment="Left" Margin="0,141,0,0" Name="lastFlipLabel" Text="Last Roll" VerticalAlignment="Top" Width="456" TextAlignment="Center" />
-            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,49,0,0" Name="numHeadBox" Text="0" VerticalAlignment="Top" Width="180" TextAlignment="Center" />
-            <TextBox Height="72" HorizontalAlignment="Right" Margin="0,49,0,0" Name="numTailBox" Text="0" VerticalAlignment="Top" Width="180" TextAlignment="Center" />            
-            <TextBox Height="72" HorizontalAlignment="Left" Margin="138,163,0,0" Name="lastFlipBox" Text="None" TextAlignment="Center" VerticalAlignment="Top" Width="180" TextChanged="lastFlipBox_TextChanged" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,49,0,0" Name="numHeadBox" Text="0" VerticalAlignment="Top" Width="180" TextAlignment="Center" InputScope="Number" IsReadOnly="True" />
+            <TextBox Height="72" HorizontalAlignment="Right" Margin="0,49,0,0" Name="numTailBox" Text="0" VerticalAlignment="Top" Width="180" TextAlignment="Center" InputScope="Number" IsReadOnly="True" />            
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="138,163,0,0" Name="lastFlipBox" Text="None" TextAlignment="Center" VerticalAlignment="Top" Width="180" TextChanged="lastFlipBox_TextChanged" IsReadOnly="True" />
             <TextBox Height="77" HorizontalAlignment="Left" Margin="42,460,0,0" Name="numFlipBox" Text="1" VerticalAlignment="Top" Width="99" TextAlignment="Center" DataContext="{Binding}" InputScope="Number" TextChanged="numFlipBox_TextChanged" />
             <Button Content="Flip" Height="77" HorizontalAlignment="Right" Margin="0,460,42,0" Name="coinFlipB" VerticalAlignment="Top" Width="271" Click="coinFlipB_Click" />
         </Grid>
