@@ -13,24 +13,14 @@ using Microsoft.Phone.Controls;
 
 namespace ProbSimulator
 {
-    public partial class dicePage : PhoneApplicationPage
+    public partial class sixDicePage : PhoneApplicationPage
     {
-        public dicePage()
+        public sixDicePage()
         {
             InitializeComponent();
         }
 
-        private void sixDiceB_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/sixDicePage.xaml", UriKind.RelativeOrAbsolute));
-        }
-
-        private void tenDiceB_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void twentyDiceB_Click(object sender, RoutedEventArgs e)
+        private void diceRollB_Click(object sender, RoutedEventArgs e)
         {
 
         }

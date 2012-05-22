@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage 
-    x:Class="ProbSimulator.dicePage"
+    x:Class="ProbSimulator.sixDicePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -28,9 +28,10 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Button Content="6-Sided Dice" Height="104" HorizontalAlignment="Left" Margin="12,5,0,0" Name="coinB" VerticalAlignment="Top" Width="444" Click="sixDiceB_Click" />
-            <Button Content="10-Sided Dice" Height="104" HorizontalAlignment="Left" Margin="12,115,0,0" Name="diceB" VerticalAlignment="Top" Width="444" Click="tenDiceB_Click" />
-            <Button Content="20-Sided Dice" Height="104" HorizontalAlignment="Left" Margin="12,225,0,0" Name="cardB" VerticalAlignment="Top" Width="444" Click="twentyDiceB_Click"/>
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="183,24,0,0" Name="resultLabel" Text="Result" VerticalAlignment="Top" />
+            <TextBox Height="72" HorizontalAlignment="Center" Margin="0,0,0,489" Name="resultBox" Text="TextBox" VerticalAlignment="Bottom" Width="450" TextAlignment="Center" />
+            <TextBox Height="77" HorizontalAlignment="Left" Margin="42,460,0,0" Name="numDiceBox" Text="1" VerticalAlignment="Top" Width="99" TextAlignment="Center" DataContext="{Binding}" InputScope="Number"/>
+            <Button Content="Roll" Height="77" HorizontalAlignment="Right" Margin="0,460,42,0" Name="diceRollB" VerticalAlignment="Top" Width="271" Click="diceRollB_Click" />
         </Grid>
     </Grid>
  
