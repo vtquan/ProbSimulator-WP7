@@ -22,13 +22,11 @@ namespace ProbSimulator
 
         private void coinFlipB_Click(object sender, RoutedEventArgs e)
         {            
-            int numHead = Int32.Parse(numHeadBox.Text);
-            int numTail = Int32.Parse(numTailBox.Text);
             int numFlip = 0;
             if (Int32.TryParse(numFlipBox.Text, out numFlip))
             {
                 
-                coinFlip(numHead, numTail, numFlip);
+                coinFlip(numFlip);
             }
             else
             {
@@ -36,11 +34,15 @@ namespace ProbSimulator
             }
         }
 
-        public void coinFlip(int numHead, int numTail, int numFlip)
+        public void coinFlip(int numFlip)
         {
 
             Random random = new Random();
+
             int result = 0;
+            int numHead = Int32.Parse(numHeadBox.Text);
+            int numTail = Int32.Parse(numTailBox.Text);
+
             for (int i = 0; i < numFlip; i++)
             {
                 result = random.Next(0, 2);
