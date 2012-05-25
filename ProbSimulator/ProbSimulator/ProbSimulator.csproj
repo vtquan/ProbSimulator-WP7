@@ -61,6 +61,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="cardPage.xaml.cs">
+      <DependentUpon>cardPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="coinPage.xaml.cs">
       <DependentUpon>coinPage.xaml</DependentUpon>
     </Compile>
@@ -86,6 +89,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="cardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="coinPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
