@@ -74,6 +74,12 @@
     <Compile Include="sixDicePage.xaml.cs">
       <DependentUpon>sixDicePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="tenDicePage.xaml.cs">
+      <DependentUpon>tenDicePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="twentyDicePage.xaml.cs">
+      <DependentUpon>twentyDicePage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -93,6 +99,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="sixDicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="tenDicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="twentyDicePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

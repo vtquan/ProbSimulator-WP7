@@ -27,12 +27,12 @@ namespace ProbSimulator
 
         private void tenDiceB_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/tenDicePage.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void twentyDiceB_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/twentyDicePage.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }
