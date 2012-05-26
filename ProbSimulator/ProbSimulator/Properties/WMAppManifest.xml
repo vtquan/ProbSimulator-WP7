@@ -1,4 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<!--This file is part of Probability Simulator.
+
+    Probability Simulator is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Probability Simulator is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Probability Simulator.  If not, see<http://www.gnu.org/licenses/> .-->
+<?xml version="1.0" encoding="utf-8"?>
 
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
   <App xmlns="" ProductID="{ec8d9a74-2e0c-4a2f-aaf1-17542faa0f31}" Title="ProbSimulator" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="ProbSimulator author" Description="Sample description" Publisher="ProbSimulator">
