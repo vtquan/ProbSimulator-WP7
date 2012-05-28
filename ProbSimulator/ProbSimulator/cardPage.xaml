@@ -42,10 +42,18 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock Height="30" HorizontalAlignment="Right" Margin="0,399,198,0" Name="resultLabel" Text="Result" VerticalAlignment="Top" />
-            <TextBox HorizontalAlignment="Center" Margin="0,430,0,105" Name="resultBox" Text="None" Width="450" TextAlignment="Center" IsReadOnly="True" />
-            <Button Content="Roll" Height="77" HorizontalAlignment="Right" Margin="0,505,38,0" Name="cardDrawB" VerticalAlignment="Top" Width="373" Click="cardDrawB_Click" />
+            <TextBlock Height="30" Name="textBlock1" Text="Draw History" HorizontalAlignment="Stretch" TextAlignment="Center" FontSize="20" Margin="-12,6,-12,570" />
+            
+            <ScrollViewer Grid.Row="1" Margin="21,42,12,214" Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <StackPanel Name="stackPanel1" Height="Auto" Width="442" VerticalAlignment="Top" HorizontalAlignment="Left">
+                </StackPanel>
+            </ScrollViewer>
+
+            <TextBlock Height="30" HorizontalAlignment="Right" Margin="0,399,198,0" Name="resultLabel" Text="Last Draw" VerticalAlignment="Top" />
+            <TextBox HorizontalAlignment="Center" Margin="0,430,0,105" Name="lastDrawBox" Text="None" Width="450" TextAlignment="Center" IsReadOnly="True" />
+            <Button Content="Roll" Height="77" HorizontalAlignment="Right" Margin="0,505,38,0" Name="cardDrawB" VerticalAlignment="Top" Width="373" Click="cardDrawB_Click" />                     
         </Grid>
+        
     </Grid>
  
     <!--Sample code showing usage of ApplicationBar-->

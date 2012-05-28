@@ -46,6 +46,7 @@ namespace ProbSimulator
             int result = 0;
             String suit = "";
             String value = "";
+            String cardString = "";
             result = random.Next(0, 4);
             switch (result)
             {
@@ -108,14 +109,17 @@ namespace ProbSimulator
             }
             if (value.Equals("Ace") || value.Equals("8"))
             {
-                resultBox.Text = "An " + value + " of " + suit;
+                cardString = "An " + value + " of " + suit;
+                lastDrawBox.Text = cardString;
             }
             else
             {
-                resultBox.Text = "A " + value + " of " + suit;
+                cardString = "A " + value + " of " + suit;
+                lastDrawBox.Text = cardString;
             }
+            stackPanel1.Children.Add(new TextBlock() { Text = cardString });
 
-
+            scrollViewer1.ScrollToVerticalOffset(stackPanel1.ActualHeight);
         }
     }
 }

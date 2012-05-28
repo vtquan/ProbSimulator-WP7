@@ -63,10 +63,14 @@ namespace ProbSimulator
                 if (result == 1)
                 {
                     numTail++;
+
+                    stackPanel1.Children.Add(new TextBlock() { Text = "Tail" });
                 }
                 else
                 {
                     numHead++;
+
+                    stackPanel1.Children.Add(new TextBlock() { Text = "Head" });
                 }
             }
             if (result == 1)	//set last roll
@@ -74,10 +78,15 @@ namespace ProbSimulator
                 lastFlipBox.Text = "Tail";
             }
             else
+            {
                 lastFlipBox.Text = "Head";
+            }
 
             numHeadBox.Text = numHead.ToString();
             numTailBox.Text = numTail.ToString();
+
+            scrollViewer1.ScrollToVerticalOffset(stackPanel1.ActualHeight);
+
         }
 
         private void lastFlipBox_TextChanged(object sender, TextChangedEventArgs e)
