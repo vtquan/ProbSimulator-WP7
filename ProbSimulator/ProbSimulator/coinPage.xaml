@@ -42,19 +42,20 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock Height="30" HorizontalAlignment="Left" Margin="6,27,0,0" Name="headLabel" Text="Head" VerticalAlignment="Top" Width="180" TextAlignment="Center" />
-            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,49,0,0" Name="numHeadBox" Text="0" VerticalAlignment="Top" Width="180" TextAlignment="Center" IsReadOnly="True" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="6,298,0,0" Name="headLabel" Text="Head" VerticalAlignment="Top" Width="180" TextAlignment="Center" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,329,0,0" Name="numHeadBox" Text="0" VerticalAlignment="Top" Width="180" TextAlignment="Center" IsReadOnly="True" />
 
-            <TextBlock Height="30" HorizontalAlignment="Right" Margin="0,27,0,0" Name="tailLabel" Text="Tail" VerticalAlignment="Top" Width="180" TextAlignment="Center" />
-            <TextBox Height="72" HorizontalAlignment="Right" Margin="0,49,0,0" Name="numTailBox" Text="0" VerticalAlignment="Top" Width="180" TextAlignment="Center" IsReadOnly="True" />
+            <TextBlock Height="30" HorizontalAlignment="Right" Margin="6,298,0,0" Name="tailLabel" Text="Tail" VerticalAlignment="Top" Width="180" TextAlignment="Center" />
+            <TextBox Height="72" HorizontalAlignment="Right" Margin="0,329,0,0" Name="numTailBox" Text="0" VerticalAlignment="Top" Width="180" TextAlignment="Center" IsReadOnly="True" />
 
-            <TextBlock Height="41" HorizontalAlignment="Left" Margin="0,141,0,0" Name="rollHistoryLabel" Text="Roll History" VerticalAlignment="Top" Width="456" TextAlignment="Center" />
-            <ScrollViewer Margin="21,0,12,214" Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Height="219" VerticalAlignment="Bottom">
+            <TextBlock Height="30" Name="textBlock1" Text="Flip History" HorizontalAlignment="Stretch" TextAlignment="Center" FontSize="20" Margin="-12,6,-12,570" />
+
+            <ScrollViewer Margin="21,42,12,315" Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
                 <StackPanel Name="stackPanel1" Height="Auto" Width="442" VerticalAlignment="Top" HorizontalAlignment="Left">
                 </StackPanel>
             </ScrollViewer>
 
-            <TextBlock Height="30" HorizontalAlignment="Right" Margin="0,399,198,0" Name="lastFlipLabel" Text="Last Flip" VerticalAlignment="Top" />
+            <TextBlock Height="30" HorizontalAlignment="Right" Margin="0,399,0,0" Name="lastFlipLabel" Text="Last Flip" VerticalAlignment="Top" Width="456" TextAlignment="Center" />
             <TextBox HorizontalAlignment="Center" Margin="0,430,0,105" Name="lastFlipBox" Text="None" Width="450" TextAlignment="Center" IsReadOnly="True" />
 
             <TextBox Height="77" HorizontalAlignment="Left" Margin="42,505,0,0" Name="numFlipBox" Text="1" VerticalAlignment="Top" Width="99" TextAlignment="Center" DataContext="{Binding}" InputScope="Number"/>

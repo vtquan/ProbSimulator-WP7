@@ -48,6 +48,7 @@ namespace ProbSimulator
             String value = "";
             String cardString = "";
             result = random.Next(0, 4);
+            result++;
             switch (result)
             {
                 case 1:
@@ -117,9 +118,16 @@ namespace ProbSimulator
                 cardString = "A " + value + " of " + suit;
                 lastDrawBox.Text = cardString;
             }
+
             stackPanel1.Children.Add(new TextBlock() { Text = cardString });
+            stackPanel1.Children.Add(new TextBlock() { Text = "  " });
 
             scrollViewer1.ScrollToVerticalOffset(stackPanel1.ActualHeight);
+        }
+
+        private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

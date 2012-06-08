@@ -24,8 +24,8 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
-    shell:SystemTray.IsVisible="True">
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
@@ -44,28 +44,36 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <TextBlock Height="30" Name="textBlock1" Text="Draw History" HorizontalAlignment="Stretch" TextAlignment="Center" FontSize="20" Margin="-12,6,-12,570" />
             
-            <ScrollViewer Grid.Row="1" Margin="21,42,12,214" Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-                <StackPanel Name="stackPanel1" Height="Auto" Width="442" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <ScrollViewer Grid.Row="1" Margin="21,42,12,214" Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                <StackPanel Name="stackPanel1" Height="Auto" Width="442" VerticalAlignment="Bottom" HorizontalAlignment="Left">
                 </StackPanel>
             </ScrollViewer>
 
             <TextBlock Height="30" HorizontalAlignment="Right" Margin="0,399,198,0" Name="resultLabel" Text="Last Draw" VerticalAlignment="Top" />
             <TextBox HorizontalAlignment="Center" Margin="0,430,0,105" Name="lastDrawBox" Text="None" Width="450" TextAlignment="Center" IsReadOnly="True" />
-            <Button Content="Roll" Height="77" HorizontalAlignment="Right" Margin="0,505,38,0" Name="cardDrawB" VerticalAlignment="Top" Width="373" Click="cardDrawB_Click" />                     
+            <Button Content="Draw" Height="77" HorizontalAlignment="Right" Margin="0,505,38,0" Name="cardDrawB" VerticalAlignment="Top" Width="373" Click="cardDrawB_Click" />                     
         </Grid>
         
     </Grid>
+
+
+        <phone:PhoneApplicationPage.ApplicationBar>
+
+            <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+                <shell:ApplicationBarIconButton IconUri="/Images/appbar.next.rest.png" Text="Back" />
+                <shell:ApplicationBarIconButton IconUri="/Images/appbar.add.rest.png" Text="Add" />
+                <shell:ApplicationBarIconButton IconUri="/Images/appbar.back.rest.png" Text="Front" />
+                <shell:ApplicationBar.MenuItems>
+                    <shell:ApplicationBarMenuItem Text="Home"  />
+                    <shell:ApplicationBarMenuItem Text="Submit"  />
+
+                    <shell:ApplicationBarMenuItem Text="Help"  />
  
-    <!--Sample code showing usage of ApplicationBar-->
-    <!--<phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-            </shell:ApplicationBar.MenuItems>
-        </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>-->
+                </shell:ApplicationBar.MenuItems>
+
+            </shell:ApplicationBar>
+
+        </phone:PhoneApplicationPage.ApplicationBar>
+
 
 </phone:PhoneApplicationPage>
