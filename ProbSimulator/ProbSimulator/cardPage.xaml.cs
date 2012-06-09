@@ -112,14 +112,17 @@ namespace ProbSimulator
             {
                 cardString = "An " + value + " of " + suit;
                 lastDrawBox.Text = cardString;
+                scrollViewer1.ScrollToVerticalOffset(2 * stackPanel1.ActualHeight);
             }
             else
             {
                 cardString = "A " + value + " of " + suit;
                 lastDrawBox.Text = cardString;
+                scrollViewer1.ScrollToVerticalOffset(2 * stackPanel1.ActualHeight);
             }
 
             stackPanel1.Children.Add(new TextBlock() { Text = cardString });
+            scrollViewer1.ScrollToVerticalOffset(stackPanel1.ActualHeight);
             stackPanel1.Children.Add(new TextBlock() { Text = "  " });
 
             scrollViewer1.ScrollToVerticalOffset(stackPanel1.ActualHeight);
