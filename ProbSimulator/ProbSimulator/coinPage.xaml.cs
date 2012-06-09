@@ -39,7 +39,6 @@ namespace ProbSimulator
             int numFlip = 0;
             if (Int32.TryParse(numFlipBox.Text, out numFlip))
             {
-                
                 coinFlip(numFlip);
             }
             else
@@ -65,12 +64,14 @@ namespace ProbSimulator
                     numTail++;
 
                     stackPanel1.Children.Add(new TextBlock() { Text = "Tail" });
+                    scrollViewer1.ScrollToVerticalOffset(2 * stackPanel1.ActualHeight);
                 }
                 else
                 {
                     numHead++;
 
                     stackPanel1.Children.Add(new TextBlock() { Text = "Head" });
+                    scrollViewer1.ScrollToVerticalOffset(2 * stackPanel1.ActualHeight);
                 }
             }
             if (result == 1)	//set last roll
@@ -85,7 +86,8 @@ namespace ProbSimulator
             numHeadBox.Text = numHead.ToString();
             numTailBox.Text = numTail.ToString();
 
-            scrollViewer1.ScrollToVerticalOffset(stackPanel1.ActualHeight);
+            stackPanel1.Children.Add(new TextBlock() { Text = "  " });
+            scrollViewer1.ScrollToVerticalOffset(2 * stackPanel1.ActualHeight);
 
         }
 
