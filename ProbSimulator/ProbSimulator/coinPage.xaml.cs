@@ -64,14 +64,12 @@ namespace ProbSimulator
                     numTail++;
 
                     stackPanel1.Children.Add(new TextBlock() { Text = "Tail" });
-                    scrollViewer1.ScrollToVerticalOffset(2 * stackPanel1.ActualHeight);
                 }
                 else
                 {
                     numHead++;
 
                     stackPanel1.Children.Add(new TextBlock() { Text = "Head" });
-                    scrollViewer1.ScrollToVerticalOffset(2 * stackPanel1.ActualHeight);
                 }
             }
             if (result == 1)	//set last roll
@@ -87,7 +85,7 @@ namespace ProbSimulator
             numTailBox.Text = numTail.ToString();
 
             stackPanel1.Children.Add(new TextBlock() { Text = "  " });
-            scrollViewer1.ScrollToVerticalOffset(2 * stackPanel1.ActualHeight);
+            scrollViewer1.ScrollToVerticalOffset(stackPanel1.ActualHeight);
 
         }
 
