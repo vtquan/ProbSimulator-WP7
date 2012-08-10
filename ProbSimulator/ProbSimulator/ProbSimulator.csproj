@@ -61,8 +61,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="cardPage.xaml.cs">
-      <DependentUpon>cardPage.xaml</DependentUpon>
+    <Compile Include="cardDrawSettingPage.xaml.cs">
+      <DependentUpon>cardDrawSettingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="nonrepeatingCardPage.xaml.cs">
+      <DependentUpon>nonrepeatingCardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="repeatingCardPage.xaml.cs">
+      <DependentUpon>repeatingCardPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="coinPage.xaml.cs">
       <DependentUpon>coinPage.xaml</DependentUpon>
@@ -89,7 +95,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="cardPage.xaml">
+    <Page Include="cardDrawSettingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="nonrepeatingCardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="repeatingCardPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

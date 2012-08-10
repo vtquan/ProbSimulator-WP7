@@ -47,7 +47,7 @@ namespace ProbSimulator
 
         private void cardB_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/cardPage.xaml", UriKind.RelativeOrAbsolute));
+            NavigationService.Navigate(new Uri("/cardDrawSettingPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void spinnerB_Click(object sender, RoutedEventArgs e)
