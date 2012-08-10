@@ -15,6 +15,9 @@ namespace ProbSimulator
 {
     public partial class nonrepeatingCardPage : PhoneApplicationPage
     {
+        bool[,] drawned = new bool[4, 13];
+        int numDrawned = 0;
+
         public nonrepeatingCardPage()
         {
             InitializeComponent();
@@ -24,97 +27,108 @@ namespace ProbSimulator
         {
             Random random = new Random();
 
-            bool[,] drawned = new bool[4,13];
+            
             int result1 = 0;
             int result2 = 0;
             String suit = "";
             String value = "";
             String cardString = "";
 
-            do
+            numDrawned++;
+            if (numDrawned > 52)
             {
-                result1 = random.Next(0, 4);
-                result2 = random.Next(0, 13);
-            }while(drawned[result1,result2] == true);
+                stackPanel1.Children.Add(new TextBlock() { Text = "All cards have been drawned" });
+                stackPanel1.Children.Add(new TextBlock() { Text = "  " });
 
-            drawned[result1, result2] = true;
-
-            result1++;
-            result2++;
-
-            switch (result1)
-            {
-                case 1:
-                    suit = "Hearts";
-                    break;
-                case 2:
-                    suit = "Clubs";
-                    break;
-                case 3:
-                    suit = "Diamonds";
-                    break;
-                default:
-                    suit = "Spades";
-                    break;
-            }
-
-            switch (result2)
-            {
-                case 1:
-                    value = "Ace";
-                    break;
-                case 2:
-                    value = "2";
-                    break;
-                case 3:
-                    value = "3";
-                    break;
-                case 4:
-                    value = "4";
-                    break;
-                case 5:
-                    value = "5";
-                    break;
-                case 6:
-                    value = "6";
-                    break;
-                case 7:
-                    value = "7";
-                    break;
-                case 8:
-                    value = "8";
-                    break;
-                case 9:
-                    value = "9";
-                    break;
-                case 10:
-                    value = "10";
-                    break;
-                case 11:
-                    value = "Jack";
-                    break;
-                case 12:
-                    value = "Queen";
-                    break;
-                default:
-                    value = "King";
-                    break;
-            }
-            if (value.Equals("Ace") || value.Equals("8"))
-            {
-                cardString = "An " + value + " of " + suit;
-                lastDrawBox.Text = cardString;
+                scrollViewer1.ScrollToVerticalOffset(stackPanel1.ActualHeight);
             }
             else
             {
-                cardString = "A " + value + " of " + suit;
-                lastDrawBox.Text = cardString;
+                do
+                {
+                    result1 = random.Next(0, 4);
+                    result2 = random.Next(0, 13);
+                } while (drawned[result1, result2] == true);
+
+                drawned[result1, result2] = true;
+
+                result1++;
+                result2++;
+
+                switch (result1)
+                {
+                    case 1:
+                        suit = "Hearts";
+                        break;
+                    case 2:
+                        suit = "Clubs";
+                        break;
+                    case 3:
+                        suit = "Diamonds";
+                        break;
+                    default:
+                        suit = "Spades";
+                        break;
+                }
+
+                switch (result2)
+                {
+                    case 1:
+                        value = "Ace";
+                        break;
+                    case 2:
+                        value = "2";
+                        break;
+                    case 3:
+                        value = "3";
+                        break;
+                    case 4:
+                        value = "4";
+                        break;
+                    case 5:
+                        value = "5";
+                        break;
+                    case 6:
+                        value = "6";
+                        break;
+                    case 7:
+                        value = "7";
+                        break;
+                    case 8:
+                        value = "8";
+                        break;
+                    case 9:
+                        value = "9";
+                        break;
+                    case 10:
+                        value = "10";
+                        break;
+                    case 11:
+                        value = "Jack";
+                        break;
+                    case 12:
+                        value = "Queen";
+                        break;
+                    default:
+                        value = "King";
+                        break;
+                }
+                if (value.Equals("Ace") || value.Equals("8"))
+                {
+                    cardString = "An " + value + " of " + suit;
+                    lastDrawBox.Text = cardString;
+                }
+                else
+                {
+                    cardString = "A " + value + " of " + suit;
+                    lastDrawBox.Text = cardString;
+                }
+
+                stackPanel1.Children.Add(new TextBlock() { Text = cardString });
+                stackPanel1.Children.Add(new TextBlock() { Text = "  " });
+
+                scrollViewer1.ScrollToVerticalOffset(stackPanel1.ActualHeight);
             }
-
-            stackPanel1.Children.Add(new TextBlock() { Text = cardString });
-            stackPanel1.Children.Add(new TextBlock() { Text = "  " });
-
-            scrollViewer1.ScrollToVerticalOffset(stackPanel1.ActualHeight);
         }
     }
 }
