@@ -85,6 +85,7 @@ namespace ProbSimulator
             numTailBox.Text = numTail.ToString();
 
             stackPanel1.Children.Add(new TextBlock() { Text = "  " });
+            historyScroll.UpdateLayout();
             scrollViewer1.ScrollToVerticalOffset(stackPanel1.ActualHeight);
 
         }
