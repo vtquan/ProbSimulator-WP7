@@ -116,7 +116,7 @@ namespace ProbSimulator
 
             stackPanel1.Children.Add(new TextBlock() { Text = cardString });
             stackPanel1.Children.Add(new TextBlock() { Text = "  " });
-
+            scrollViewer1.UpdateLayout();
             scrollViewer1.ScrollToVerticalOffset(stackPanel1.ActualHeight);
         }
 

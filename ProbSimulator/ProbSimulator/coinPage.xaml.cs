@@ -37,9 +37,15 @@ namespace ProbSimulator
         private void coinFlipB_Click(object sender, RoutedEventArgs e)
         {            
             int numFlip = 0;
-            if (Int32.TryParse(numFlipBox.Text, out numFlip))
+            Int32.TryParse(numFlipBox.Text, out numFlip);
+
+            if (Int32.TryParse(numFlipBox.Text, out numFlip) != false && (numFlip <= 1000  && numFlip >= 0))  //if user enters a number between 0 and 1000
             {
                 coinFlip(numFlip);
+            }
+            else if (Int32.TryParse(numFlipBox.Text, out numFlip) != false && (numFlip > 1000 || numFlip < 0) )  //if user enters a number not between 0 and 1000
+            {
+                MessageBox.Show("Please enter a number between 0 and 1000");
             }
             else
             {
