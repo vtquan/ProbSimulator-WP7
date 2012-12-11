@@ -50,7 +50,7 @@
 
             <TextBlock Height="30" Name="textBlock1" Text="Flip History" HorizontalAlignment="Stretch" TextAlignment="Center" FontSize="20" Margin="-12,6,-12,570" />
 
-            <ScrollViewer Margin="21,42,12,315" Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <ScrollViewer Margin="21,42,12,315" Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" BorderBrush="White" BorderThickness="1">
                 <StackPanel Name="stackPanel1" Height="Auto" Width="442" VerticalAlignment="Top" HorizontalAlignment="Left">
                 </StackPanel>
             </ScrollViewer>
