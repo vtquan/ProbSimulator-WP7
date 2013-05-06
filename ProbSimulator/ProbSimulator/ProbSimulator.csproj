@@ -61,32 +61,32 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="cardDrawSettingPage.xaml.cs">
+    <Compile Include="Page\cardDrawSettingPage.xaml.cs">
       <DependentUpon>cardDrawSettingPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="nonrepeatingCardPage.xaml.cs">
+    <Compile Include="Page\nonrepeatingCardPage.xaml.cs">
       <DependentUpon>nonrepeatingCardPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="repeatingCardPage.xaml.cs">
+    <Compile Include="Page\repeatingCardPage.xaml.cs">
       <DependentUpon>repeatingCardPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="coinPage.xaml.cs">
+    <Compile Include="Page\coinPage.xaml.cs">
       <DependentUpon>coinPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="dicePage.xaml.cs">
+    <Compile Include="Page\dicePage.xaml.cs">
       <DependentUpon>dicePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sixDicePage.xaml.cs">
+    <Compile Include="Page\sixDicePage.xaml.cs">
       <DependentUpon>sixDicePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="tenDicePage.xaml.cs">
+    <Compile Include="Page\tenDicePage.xaml.cs">
       <DependentUpon>tenDicePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="twentyDicePage.xaml.cs">
+    <Compile Include="Page\twentyDicePage.xaml.cs">
       <DependentUpon>twentyDicePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -95,23 +95,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="cardDrawSettingPage.xaml">
+    <Page Include="Page\cardDrawSettingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="nonrepeatingCardPage.xaml">
+    <Page Include="Page\nonrepeatingCardPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="repeatingCardPage.xaml">
+    <Page Include="Page\repeatingCardPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="coinPage.xaml">
+    <Page Include="Page\coinPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="dicePage.xaml">
+    <Page Include="Page\dicePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -119,15 +119,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="sixDicePage.xaml">
+    <Page Include="Page\sixDicePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="tenDicePage.xaml">
+    <Page Include="Page\tenDicePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="twentyDicePage.xaml">
+    <Page Include="Page\twentyDicePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,9 +145,7 @@
     </Content>
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Page\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

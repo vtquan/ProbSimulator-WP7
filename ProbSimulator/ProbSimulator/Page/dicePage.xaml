@@ -39,13 +39,28 @@
             <TextBlock x:Name="ApplicationTitle" Text="Probability Simulator" Style="{StaticResource PhoneTextNormalStyle}"/>
             <TextBlock x:Name="PageTitle" Text="Dice Roll" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
+        <Grid Grid.Row="1">
 
-        <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Button Content="6-Sided Dice" Height="104" HorizontalAlignment="Left" Margin="12,5,0,0" Name="coinB" VerticalAlignment="Top" Width="444" Click="sixDiceB_Click" />
-            <Button Content="10-Sided Dice" Height="104" HorizontalAlignment="Left" Margin="12,115,0,0" Name="diceB" VerticalAlignment="Top" Width="444" Click="tenDiceB_Click" />
-            
+        	<ScrollViewer>
+        		<Grid>
+        			<Grid.RowDefinitions>
+        				<RowDefinition Height="104"/>
+        				<RowDefinition Height="104"/>
+        				<RowDefinition Height="104"/>
+        				<RowDefinition Height="104"/>
+        				<RowDefinition Height="104"/>
+        				<RowDefinition Height="104"/>
+        			</Grid.RowDefinitions>
+        			<Button Content="4-Sided Dice" Height="104" Margin="0,5,0,0" x:Name="_4dB" VerticalAlignment="Top" Click="sixDiceB_Click" />
+        			<Button Content="6-Sided Dice" Height="104" x:Name="_6dB" VerticalAlignment="Top" Click="tenDiceB_Click" Grid.Row="1" />
+        			<Button Content="8-Sided Dice" Height="104" Margin="0" x:Name="_8dB" VerticalAlignment="Top" Click="sixDiceB_Click" Grid.Row="2" />
+        			<Button Content="10-Sided Dice" Height="104" Margin="0" x:Name="_10dB" VerticalAlignment="Top" Click="tenDiceB_Click" Grid.Row="3" />
+        			<Button Content="12-Sided Dice" Height="104" Margin="0" x:Name="_12dB" VerticalAlignment="Top" Click="sixDiceB_Click" Grid.Row="4" />
+        			<Button Content="20-Sided Dice" Height="104" Margin="0" x:Name="_20dB" VerticalAlignment="Top" Click="tenDiceB_Click" Grid.Row="5" />
+        		</Grid>
+        	</ScrollViewer>
         </Grid>
+        <!--ContentPanel - place additional content here-->
     </Grid>
  
     <!--Sample code showing usage of ApplicationBar-->

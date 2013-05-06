@@ -37,20 +37,25 @@ namespace ProbSimulator
 
         private void coinB_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/coinPage.xaml", UriKind.RelativeOrAbsolute));
+            NavigationService.Navigate(new Uri("/Page/coinPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void diceB_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/dicePage.xaml", UriKind.RelativeOrAbsolute));
+            NavigationService.Navigate(new Uri("/Page/dicePage.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void cardB_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/cardDrawSettingPage.xaml", UriKind.RelativeOrAbsolute));
+            NavigationService.Navigate(new Uri("/Page/cardDrawSettingPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
-        private void spinnerB_Click(object sender, RoutedEventArgs e)
+        private void bingoB_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void randomB_Click(object sender, RoutedEventArgs e)
         {
 
         }
