@@ -25,6 +25,7 @@
     <SilverlightAppEntry>ProbSimulator.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <ExpressionBlendVersion>5.0.40218.0</ExpressionBlendVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,6 +65,15 @@
     <Compile Include="Page\cardDrawSettingPage.xaml.cs">
       <DependentUpon>cardDrawSettingPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Page\Dice Pages\eightDicePage.xaml.cs">
+      <DependentUpon>eightDicePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Dice Pages\fourDicePage.xaml.cs">
+      <DependentUpon>fourDicePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Dice Pages\twelveDicePage.xaml.cs">
+      <DependentUpon>twelveDicePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Page\nonrepeatingCardPage.xaml.cs">
       <DependentUpon>nonrepeatingCardPage.xaml</DependentUpon>
     </Compile>
@@ -80,13 +90,13 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Page\sixDicePage.xaml.cs">
+    <Compile Include="Page\Dice Pages\sixDicePage.xaml.cs">
       <DependentUpon>sixDicePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\tenDicePage.xaml.cs">
+    <Compile Include="Page\Dice Pages\tenDicePage.xaml.cs">
       <DependentUpon>tenDicePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\twentyDicePage.xaml.cs">
+    <Compile Include="Page\Dice Pages\twentyDicePage.xaml.cs">
       <DependentUpon>twentyDicePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -96,6 +106,18 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="Page\cardDrawSettingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page\Dice Pages\eightDicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page\Dice Pages\fourDicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page\Dice Pages\twelveDicePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -119,15 +141,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\sixDicePage.xaml">
+    <Page Include="Page\Dice Pages\sixDicePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\tenDicePage.xaml">
+    <Page Include="Page\Dice Pages\tenDicePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page\twentyDicePage.xaml">
+    <Page Include="Page\Dice Pages\twentyDicePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

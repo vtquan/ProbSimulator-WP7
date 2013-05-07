@@ -48,5 +48,35 @@ namespace ProbSimulator
         {
             NavigationService.Navigate(new Uri("/twentyDicePage.xaml", UriKind.RelativeOrAbsolute));
         }
+
+        private void _4dB_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Page/Dice Pages/fourDicePage.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void _6dB_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Page/Dice Pages/sixDicePage.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void _8dB_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Page/Dice Pages/eightDicePage.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void _10dB_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Page/Dice Pages/tenDicePage.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void _12dB_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Page/Dice Pages/twelveDicePage.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void _20dB_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Page/Dice Pages/twentyDicePage.xaml", UriKind.RelativeOrAbsolute));
+        }
     }
 }

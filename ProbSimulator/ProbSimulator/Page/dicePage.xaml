@@ -36,10 +36,10 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="Probability Simulator" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="ApplicationTitle" Text="PROBABILITY SIMULATOR" Style="{StaticResource PhoneTextNormalStyle}"/>
             <TextBlock x:Name="PageTitle" Text="Dice Roll" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Margin="12,0">
 
         	<ScrollViewer>
         		<Grid>
@@ -51,12 +51,12 @@
         				<RowDefinition Height="104"/>
         				<RowDefinition Height="104"/>
         			</Grid.RowDefinitions>
-        			<Button Content="4-Sided Dice" Height="104" Margin="0,5,0,0" x:Name="_4dB" VerticalAlignment="Top" Click="sixDiceB_Click" />
-        			<Button Content="6-Sided Dice" Height="104" x:Name="_6dB" VerticalAlignment="Top" Click="tenDiceB_Click" Grid.Row="1" />
-        			<Button Content="8-Sided Dice" Height="104" Margin="0" x:Name="_8dB" VerticalAlignment="Top" Click="sixDiceB_Click" Grid.Row="2" />
-        			<Button Content="10-Sided Dice" Height="104" Margin="0" x:Name="_10dB" VerticalAlignment="Top" Click="tenDiceB_Click" Grid.Row="3" />
-        			<Button Content="12-Sided Dice" Height="104" Margin="0" x:Name="_12dB" VerticalAlignment="Top" Click="sixDiceB_Click" Grid.Row="4" />
-        			<Button Content="20-Sided Dice" Height="104" Margin="0" x:Name="_20dB" VerticalAlignment="Top" Click="tenDiceB_Click" Grid.Row="5" />
+        			<Button Content="4-Sided Dice" Height="104" Margin="0,5,0,0" x:Name="_4dB" VerticalAlignment="Top" Click="_4dB_Click"/>
+        			<Button Content="6-Sided Dice" Height="104" x:Name="_6dB" VerticalAlignment="Top" Grid.Row="1" Click="_6dB_Click" />
+        			<Button Content="8-Sided Dice" Height="104" Margin="0" x:Name="_8dB" VerticalAlignment="Top" Grid.Row="2" Click="_8dB_Click" />
+        			<Button Content="10-Sided Dice" Height="104" Margin="0" x:Name="_10dB" VerticalAlignment="Top" Grid.Row="3" Click="_10dB_Click" />
+        			<Button Content="12-Sided Dice" Height="104" Margin="0" x:Name="_12dB" VerticalAlignment="Top" Grid.Row="4" Click="_12dB_Click" />
+        			<Button Content="20-Sided Dice" Height="104" Margin="0" x:Name="_20dB" VerticalAlignment="Top" Grid.Row="5" Click="_20dB_Click" />
         		</Grid>
         	</ScrollViewer>
         </Grid>
