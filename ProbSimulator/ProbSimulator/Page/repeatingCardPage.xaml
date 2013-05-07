@@ -44,7 +44,7 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <TextBlock Height="30" Name="textBlock1" Text="Draw History" HorizontalAlignment="Stretch" TextAlignment="Center" FontSize="20" Margin="-12,6,-12,570" />
             
-            <ScrollViewer Grid.Row="1" Margin="21,42,12,214" Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <ScrollViewer Grid.Row="1" Margin="12,42,12,214" Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" BorderThickness="1" BorderBrush="White">
                 <StackPanel Name="stackPanel1" Height="Auto" Width="442" VerticalAlignment="Top" HorizontalAlignment="Left">
                 </StackPanel>
             </ScrollViewer>

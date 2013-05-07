@@ -52,7 +52,7 @@ namespace ProbSimulator
 
         private void bingoB_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/Page/bingoPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void randomB_Click(object sender, RoutedEventArgs e)

@@ -59,7 +59,7 @@
             <TextBox Margin="0,430,0,105" Name="lastFlipBox" Text="None" TextAlignment="Center" IsReadOnly="True" />
 
             <TextBox Height="77" HorizontalAlignment="Left" Margin="42,505,0,0" Name="numFlipBox" Text="1" VerticalAlignment="Top" Width="99" TextAlignment="Center" DataContext="{Binding}" InputScope="Number"/>
-            <Button Content="Roll" Height="77" HorizontalAlignment="Right" Margin="0,505,38,0" Name="coinFlipB" VerticalAlignment="Top" Width="271" Click="coinFlipB_Click" />
+            <Button Content="Flip" Height="77" HorizontalAlignment="Right" Margin="0,505,38,0" Name="coinFlipB" VerticalAlignment="Top" Width="271" Click="coinFlipB_Click" />
         </Grid>
     </Grid>
 
