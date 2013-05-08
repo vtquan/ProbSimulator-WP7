@@ -80,6 +80,9 @@
     <Compile Include="Page\nonrepeatingCardPage.xaml.cs">
       <DependentUpon>nonrepeatingCardPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Page\randomPage.xaml.cs">
+      <DependentUpon>randomPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Page\repeatingCardPage.xaml.cs">
       <DependentUpon>repeatingCardPage.xaml</DependentUpon>
     </Compile>
@@ -129,6 +132,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Page\nonrepeatingCardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page\randomPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

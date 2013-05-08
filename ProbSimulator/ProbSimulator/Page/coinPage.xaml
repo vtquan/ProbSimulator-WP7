@@ -48,18 +48,18 @@
             <TextBlock Height="30" HorizontalAlignment="Right" Margin="6,298,0,0" Name="tailLabel" Text="Tail" VerticalAlignment="Top" Width="180" TextAlignment="Center" />
             <TextBox Height="72" HorizontalAlignment="Right" Margin="0,329,0,0" Name="numTailBox" Text="0" VerticalAlignment="Top" Width="180" TextAlignment="Center" IsReadOnly="True" />
 
-            <TextBlock Height="30" Name="textBlock1" Text="Flip History" HorizontalAlignment="Stretch" TextAlignment="Center" FontSize="20" Margin="-12,6,-12,570" />
+            <TextBlock Height="30" Name="textBlock1" Text="Toss History" HorizontalAlignment="Stretch" TextAlignment="Center" FontSize="20" Margin="-12,6,-12,570" />
 
             <ScrollViewer Margin="21,42,12,315" Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" BorderBrush="White" BorderThickness="1">
                 <StackPanel Name="stackPanel1" Height="Auto" Width="442" VerticalAlignment="Top" HorizontalAlignment="Left">
                 </StackPanel>
             </ScrollViewer>
 
-            <TextBlock Height="30" Margin="0,399,0,0" Name="lastFlipLabel" Text="Last Flip" VerticalAlignment="Top" TextAlignment="Center" />
+            <TextBlock Height="30" Margin="0,399,0,0" Name="lastFlipLabel" Text="Last Toss" VerticalAlignment="Top" TextAlignment="Center" />
             <TextBox Margin="0,430,0,105" Name="lastFlipBox" Text="None" TextAlignment="Center" IsReadOnly="True" />
 
             <TextBox Height="77" HorizontalAlignment="Left" Margin="42,505,0,0" Name="numFlipBox" Text="1" VerticalAlignment="Top" Width="99" TextAlignment="Center" DataContext="{Binding}" InputScope="Number"/>
-            <Button Content="Flip" Height="77" HorizontalAlignment="Right" Margin="0,505,38,0" Name="coinFlipB" VerticalAlignment="Top" Width="271" Click="coinFlipB_Click" />
+            <Button Content="Toss" HorizontalAlignment="Right" Margin="0,0,38,25" Name="coinFlipB" Width="271" Click="coinFlipB_Click" Height="77" VerticalAlignment="Bottom" />
         </Grid>
     </Grid>
 

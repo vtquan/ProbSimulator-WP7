@@ -30,7 +30,6 @@ namespace ProbSimulator
 
         private void callB_Click(object sender, RoutedEventArgs e)
         {
-
             int numCall = 0;
             Int32.TryParse(numCallBox.Text, out numCall);
 

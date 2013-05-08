@@ -35,7 +35,7 @@
         	<TextBlock Height="30" Margin="201.353,0,200.647,177" x:Name="resultLabel" Text="Result" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.ColumnSpan="2" />
         	<TextBox HorizontalAlignment="Center" Margin="3,430,3,105" x:Name="resultBox" Text="None" Width="450" TextAlignment="Center" IsReadOnly="True" Grid.ColumnSpan="2" />
         	<TextBox Height="77" HorizontalAlignment="Left" Margin="42,505,0,0" x:Name="numCallBox" Text="1" VerticalAlignment="Top" Width="99" TextAlignment="Center" DataContext="{Binding}" InputScope="Number" Grid.ColumnSpan="2"/>
-        	<Button Content="Call" Height="77" HorizontalAlignment="Right" Margin="0,505,38,0" x:Name="callB" VerticalAlignment="Top" Width="271" Click="callB_Click" Grid.ColumnSpan="2" />
+        	<Button Content="Call" Height="77" HorizontalAlignment="Right" Margin="0,0,39,23" x:Name="callB" VerticalAlignment="Bottom" Width="271" Click="callB_Click" Grid.ColumnSpan="2" />
         	<Grid x:Name="historyGrid" Margin="0,0,0,212" Grid.ColumnSpan="2">
 
         		<TextBlock x:Name="historyListLabel" TextWrapping="Wrap" Text="Call History" VerticalAlignment="Top" Margin="0" Height="30" HorizontalAlignment="Center" Width="118"/>

@@ -36,17 +36,12 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="Probability Simulator" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="ApplicationTitle" Text="PROBABILITY SIMULATOR" Style="{StaticResource PhoneTextNormalStyle}"/>
             <TextBlock x:Name="PageTitle" Text="6-Sided Dice" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0">
-            
-            <TextBlock Height="30" HorizontalAlignment="Center" Margin="0,0,0,177" Name="resultLabel" Text="Result" VerticalAlignment="Bottom" />
-            <TextBox HorizontalAlignment="Center" Margin="0,430,0,105" Name="resultBox" Text="None" Width="450" TextAlignment="Center" IsReadOnly="True" />
-            <TextBox Height="77" HorizontalAlignment="Left" Margin="42,505,0,0" Name="numDiceBox" Text="1" VerticalAlignment="Top" Width="99" TextAlignment="Center" DataContext="{Binding}" InputScope="Number"/>
-            <Button Content="Roll" Height="77" HorizontalAlignment="Right" Margin="0,505,38,0" Name="diceRollB" VerticalAlignment="Top" Width="271" Click="diceRollB_Click" />
             <ScrollViewer Margin="0,0,0,213">
             	<Grid>
             		<TextBlock HorizontalAlignment="Left" Margin="11,19,0,0" x:Name="textBlock1" Text="1" VerticalAlignment="Top" FontSize="25" Width="26" TextAlignment="Right" />
@@ -64,6 +59,10 @@
             		<TextBox HorizontalAlignment="Right" Margin="0,144,42,0" x:Name="numSixResultBox" Text="0" VerticalAlignment="Top" Width="150" IsReadOnly="True" RenderTransformOrigin="0.5,0.5" />
             	</Grid>
             </ScrollViewer>
+            <TextBlock Height="30" HorizontalAlignment="Center" Margin="201.353,0,224.647,177" x:Name="resultLabel" Text="Result" VerticalAlignment="Bottom" />
+            <TextBox HorizontalAlignment="Center" Margin="3,0,27,105" x:Name="resultBox" Text="None" Width="450" TextAlignment="Center" IsReadOnly="True" Height="72" VerticalAlignment="Bottom" />
+            <TextBox Height="77" HorizontalAlignment="Left" Margin="30,0,0,25" x:Name="numDiceBox" Text="1" VerticalAlignment="Bottom" Width="99" TextAlignment="Center" DataContext="{Binding}" InputScope="Number"/>
+            <Button Content="Roll" Height="77" HorizontalAlignment="Right" Margin="0,0,54,25" x:Name="diceRollB" VerticalAlignment="Bottom" Width="271" Click="diceRollB_Click" />
 
         </Grid>
     </Grid>

@@ -22,12 +22,12 @@ namespace ProbSimulator
 
         private void repeatingCardB_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/repeatingCardPage.xaml", UriKind.RelativeOrAbsolute));
+            NavigationService.Navigate(new Uri("/Page/repeatingCardPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void nonrepeatingCardB_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/nonrepeatingCardPage.xaml", UriKind.RelativeOrAbsolute));
+            NavigationService.Navigate(new Uri("/Page/nonrepeatingCardPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
 

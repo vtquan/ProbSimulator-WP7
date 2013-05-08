@@ -34,87 +34,112 @@ namespace ProbSimulator
             InitializeComponent();
         }
 
-        private void cardDrawB_Click(object sender, RoutedEventArgs e)
+        private void drawB_Click(object sender, RoutedEventArgs e)
+        {
+
+            int numDraw = 0;
+            Int32.TryParse(numDrawBox.Text, out numDraw);
+
+            if (Int32.TryParse(numDrawBox.Text, out numDraw) != false && numDraw <= 1000)
+            {
+                cardDraw(numDraw);
+            }
+            else if (Int32.TryParse(numDrawBox.Text, out numDraw) != false && numDraw > 1000)
+            {
+                MessageBox.Show("Please enter a number less than 1000");
+            }
+            else
+            {
+                MessageBox.Show("Please enter only integer (no decimal)");
+            }
+        }
+
+        private void cardDraw(int numDraw)
         {
             Random random = new Random();
 
+            
             int result = 0;
             String suit = "";
             String value = "";
             String cardString = "";
-            result = random.Next(0, 4);
-            result++;
-            switch (result)
-            {
-                case 1:
-                    suit = "Hearts";
-                    break;
-                case 2:
-                    suit = "Clubs";
-                    break;
-                case 3:
-                    suit = "Diamonds";
-                    break;
-                default:
-                    suit = "Spades";
-                    break;
-            }
-            result = random.Next(0, 13);
-            result++;
-            switch (result)
-            {
-                case 1:
-                    value = "Ace";
-                    break;
-                case 2:
-                    value = "2";
-                    break;
-                case 3:
-                    value = "3";
-                    break;
-                case 4:
-                    value = "4";
-                    break;
-                case 5:
-                    value = "5";
-                    break;
-                case 6:
-                    value = "6";
-                    break;
-                case 7:
-                    value = "7";
-                    break;
-                case 8:
-                    value = "8";
-                    break;
-                case 9:
-                    value = "9";
-                    break;
-                case 10:
-                    value = "10";
-                    break;
-                case 11:
-                    value = "Jack";
-                    break;
-                case 12:
-                    value = "Queen";
-                    break;
-                default:
-                    value = "King";
-                    break;
-            }
-            if (value.Equals("Ace") || value.Equals("8"))
-            {
-                cardString = "An " + value + " of " + suit;
-                lastDrawBox.Text = cardString;
-            }
-            else
-            {
-                cardString = "A " + value + " of " + suit;
-                lastDrawBox.Text = cardString;
-            }
 
-            stackPanel1.Children.Add(new TextBlock() { Text = cardString });
+            for (int i = 0; i < numDraw; i++)
+            {
+                result = random.Next(0, 4);
+                result++;
+                switch (result)
+                {
+                    case 1:
+                        suit = "Hearts";
+                        break;
+                    case 2:
+                        suit = "Clubs";
+                        break;
+                    case 3:
+                        suit = "Diamonds";
+                        break;
+                    default:
+                        suit = "Spades";
+                        break;
+                }
+                result = random.Next(0, 13);
+                result++;
+                switch (result)
+                {
+                    case 1:
+                        value = "Ace";
+                        break;
+                    case 2:
+                        value = "2";
+                        break;
+                    case 3:
+                        value = "3";
+                        break;
+                    case 4:
+                        value = "4";
+                        break;
+                    case 5:
+                        value = "5";
+                        break;
+                    case 6:
+                        value = "6";
+                        break;
+                    case 7:
+                        value = "7";
+                        break;
+                    case 8:
+                        value = "8";
+                        break;
+                    case 9:
+                        value = "9";
+                        break;
+                    case 10:
+                        value = "10";
+                        break;
+                    case 11:
+                        value = "Jack";
+                        break;
+                    case 12:
+                        value = "Queen";
+                        break;
+                    default:
+                        value = "King";
+                        break;
+                }
+                if (value.Equals("Ace") || value.Equals("8"))
+                {
+                    cardString = "An " + value + " of " + suit;
+                    resultBox.Text = cardString;
+                }
+                else
+                {
+                    cardString = "A " + value + " of " + suit;
+                    resultBox.Text = cardString;
+                }
+
+                stackPanel1.Children.Add(new TextBlock() { Text = cardString });
+            }
             stackPanel1.Children.Add(new TextBlock() { Text = "  " });
             scrollViewer1.UpdateLayout();
             scrollViewer1.ScrollToVerticalOffset(stackPanel1.ActualHeight);

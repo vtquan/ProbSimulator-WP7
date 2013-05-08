@@ -57,7 +57,7 @@ namespace ProbSimulator
 
         private void randomB_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/Page/randomPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
