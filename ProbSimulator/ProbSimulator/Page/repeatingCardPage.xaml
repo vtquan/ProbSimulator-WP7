@@ -37,7 +37,7 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock x:Name="ApplicationTitle" Text="PROBABILITY SIMULATOR" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Text="Card Draws" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="PageTitle" Text="Cards Draw" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
             <TextBlock Height="30" x:Name="textBlock1_Copy" Text="Repeating" />
         </StackPanel>
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="10,0,14,0">
@@ -49,7 +49,7 @@
         	<TextBlock Height="30" HorizontalAlignment="Center" Margin="0,0,0,177" x:Name="resultLabel" Text="Result" VerticalAlignment="Bottom" />
         	<TextBox HorizontalAlignment="Center" Margin="0,0,0,105" x:Name="resultBox" Text="None" Width="450" TextAlignment="Center" IsReadOnly="True" Height="72" VerticalAlignment="Bottom" />
         	<TextBox Height="77" HorizontalAlignment="Left" Margin="30,0,0,25" x:Name="numDrawBox" Text="1" VerticalAlignment="Bottom" Width="99" TextAlignment="Center" DataContext="{Binding}" InputScope="Number"/>
-        	<Button Content="Roll" Height="77" HorizontalAlignment="Right" Margin="0,0,30,25" x:Name="drawB" VerticalAlignment="Bottom" Width="271" Click="drawB_Click" />
+        	<Button Content="Draw" Height="77" HorizontalAlignment="Right" Margin="0,0,30,25" x:Name="drawB" VerticalAlignment="Bottom" Width="271" Click="drawB_Click" />
         </Grid>
 
         <!--ContentPanel - place additional content here-->

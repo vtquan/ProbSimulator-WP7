@@ -41,7 +41,7 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0">
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0">
             <ScrollViewer Margin="0,0,0,213">
             	<Grid>
             		<TextBlock HorizontalAlignment="Left" Margin="11,19,0,0" x:Name="textBlock1" Text="1" VerticalAlignment="Top" FontSize="25" Width="26" TextAlignment="Right" />
@@ -59,10 +59,10 @@
             		<TextBox HorizontalAlignment="Right" Margin="0,144,42,0" x:Name="numSixResultBox" Text="0" VerticalAlignment="Top" Width="150" IsReadOnly="True" RenderTransformOrigin="0.5,0.5" />
             	</Grid>
             </ScrollViewer>
-            <TextBlock Height="30" HorizontalAlignment="Center" Margin="201.353,0,224.647,177" x:Name="resultLabel" Text="Result" VerticalAlignment="Bottom" />
-            <TextBox HorizontalAlignment="Center" Margin="3,0,27,105" x:Name="resultBox" Text="None" Width="450" TextAlignment="Center" IsReadOnly="True" Height="72" VerticalAlignment="Bottom" />
+            <TextBlock Height="30" HorizontalAlignment="Center" Margin="0,0,0,177" x:Name="resultLabel" Text="Result" VerticalAlignment="Bottom" />
+            <TextBox HorizontalAlignment="Center" Margin="0,0,0,105" x:Name="resultBox" Text="None" Width="450" TextAlignment="Center" IsReadOnly="True" Height="72" VerticalAlignment="Bottom" />
             <TextBox Height="77" HorizontalAlignment="Left" Margin="30,0,0,25" x:Name="numDiceBox" Text="1" VerticalAlignment="Bottom" Width="99" TextAlignment="Center" DataContext="{Binding}" InputScope="Number"/>
-            <Button Content="Roll" Height="77" HorizontalAlignment="Right" Margin="0,0,54,25" x:Name="diceRollB" VerticalAlignment="Bottom" Width="271" Click="diceRollB_Click" />
+            <Button Content="Roll" Height="77" HorizontalAlignment="Right" Margin="0,0,30,25" x:Name="diceRollB" VerticalAlignment="Bottom" Width="271" Click="diceRollB_Click" />
 
         </Grid>
     </Grid>

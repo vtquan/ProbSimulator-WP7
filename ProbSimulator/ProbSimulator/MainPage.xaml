@@ -43,9 +43,9 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Button Content="Coin Flip" Height="104" Margin="12,5,12,0" Name="coinB" VerticalAlignment="Top" Click="coinB_Click" />
+            <Button Content="Coins Flip" Height="104" Margin="12,5,12,0" Name="coinB" VerticalAlignment="Top" Click="coinB_Click" />
             <Button Content="Dice Roll" Height="104" Margin="12,115,12,0" Name="diceB" VerticalAlignment="Top" Click="diceB_Click" />
-            <Button Content="Card Draw" Height="104" Margin="12,225,12,0" Name="cardB" VerticalAlignment="Top" Click="cardB_Click"/>
+            <Button Content="Cards Draw" Height="104" Margin="12,225,12,0" Name="cardB" VerticalAlignment="Top" Click="cardB_Click"/>
             <Button Content="Bingo Call" Height="104" Margin="12,335,12,0" x:Name="bingoB" VerticalAlignment="Top" Click="bingoB_Click"/>
             <Button Content="Random Number" Height="104" Margin="12,445,12,0" x:Name="randomB" VerticalAlignment="Top" Click="randomB_Click"/>
         </Grid>
